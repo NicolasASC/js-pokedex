@@ -79,6 +79,7 @@ function debounce(search, delay) {
 searchInput.addEventListener('keyup', debounce(() => {
 
       pokemonList.innerHTML = '';
+      offset = 0;
       loadMoreButton.style.display = 'none';
       const searchTxt = searchInput.value.toLowerCase();
       let pokemonCount = 0;
